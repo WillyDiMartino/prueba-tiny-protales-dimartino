@@ -1,0 +1,242 @@
+/*----Layout-----*/
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.front_layout{
+    background-color: #15151d;
+    color: white;
+}
+
+.admin_layout{
+    background-color: whitesmoke;
+    color: #15151d;
+}
+
+.sr-only{
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;  
+}
+
+.contenedor-inicial{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+.navbar {
+    background-color: #e10600;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.navbar-brand img{
+    width: 120px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+.navbar .user-btn{
+    text-align: center;
+    text-decoration: none;
+    color:whitesmoke;
+    font-weight: 500;
+    font-size: 1.3rem;
+    width: 35px;
+    height: 35px;
+    outline: solid 2px white;
+    border-radius: 5rem;
+    padding:0;
+    margin: 0;
+}
+
+.navbar .user-btn:hover{
+    outline: solid 2px black;
+}
+
+.bi-person-circle{
+    font-size: 2.2rem;
+}
+
+/*----Home-----*/
+
+.welcome{
+    background-image: url('../img/foto_ferrari.webp');
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    mask-image: linear-gradient(transparent, black, black, transparent);
+}
+
+.welcome div {
+width: 50%;
+text-align: end;
+padding-right: 100px;
+text-shadow:#000000 1px 1px 5px;
+background: linear-gradient(to right, transparent , rgba(21, 21, 29, 0.6) 20%);
+}
+
+.btn-api{
+background-color: #e10600;
+padding-inline: 4.5rem;
+padding-block: 0.4rem;
+border-radius: 100vh;
+color: white;
+text-decoration: none;
+transition: ease-in-out 0.2s;
+text-shadow: none;
+}
+
+.btn-api:hover{
+background-color: whitesmoke;
+color: #15151d;
+transition: ease-in-out 0.2s;
+}
+
+/*----noticias-----*/
+
+.noticias a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.noticias a:hover {
+    background-color: rgba(245, 245, 245, 0.24);
+}
+
+.articulo div{
+    max-width: 600px;
+}
+
+.articulo p{
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    
+}
+
+
+/*----auacripción-----*/
+
+.plan-item{
+    background-color: #15151d;
+    color: white;
+    border-radius: 1rem;
+    margin: 1rem;
+    text-decoration: none;
+    border: whitesmoke 2px solid;
+    transition: ease-in-out 0.2s;
+}
+
+.plan-item:hover{
+    background-color: rgba(245, 245, 245, 0.05);
+    transform: scale(1.05);
+}
+
+.plan-item h3{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.plan-item p:first-of-type{
+    font-weight: 500;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+}
+
+.plan-item p:last-child{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+/*----admin-----*/
+
+.bi-trash3{
+    color: rgb(184, 16, 16);
+    font-size: 1.3rem;
+}
+
+.bi-trash3:hover{
+    color: rgb(112, 9, 9);
+}
+
+.bi-pencil-square{
+    color: rgb(16, 184, 52);
+    font-size: 1.3rem;
+}
+
+.bi-pencil-square:hover{
+    color: rgb(9, 112, 31);
+}
+
+/*----footer-----*/
+
+footer{
+    
+    background-color: #15151d;
+    color: white;  
+}
+
+footer div{
+    height: 300px;
+    padding: 1rem;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer span{
+    font-weight: bolder;
+}
+
+footer p{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) { 
+
+    main{
+        background-color: white;
+        color: #15151d;
+    }
+    
+    .welcome{
+        background:none;
+        mask-image: none;
+
+    }
+    
+    .welcome div {
+        background: none;
+        width: 100%;
+        padding-inline: 1rem;
+        text-align: center;
+        text-shadow: none;
+    }
+
+    .noticias a {
+        color:#15151d;
+    }
+}
